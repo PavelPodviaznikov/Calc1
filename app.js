@@ -1,33 +1,27 @@
 var express = require('express')
 var app = express()
-var a;
-var b;
-var operator;
-var answer;
 
 app.get('/', function (req, res) {
- a=req.param('a');
- b=req.param('b');
+ a=parseInt(req.param('a'));
+ b=parseInt(req.param('b'));
  operator=req.param('operator');
- a = parseInt(a);
- b = parseInt(b);
- calculator(a,b,operator);
+ answer = calculator(a,b,operator);
  res.send(answer.toString());
 
 })
 function calculator(x, y, oper){
 	if(oper==="plus")
 	{
-		answer = x + y;
+		return x + y;
 	}
 	else if(oper==="minus"){
-		answer = x-y;
+		return x-y;
 	}
 	else if(oper==="multiply"){
-		answer = x*y;
+		return x*y;
 	}
 	else if(oper==="divide"){
-		answer = x/y;
+		return x/y;
 	}
 }
 
