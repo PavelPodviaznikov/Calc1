@@ -6,8 +6,7 @@ app.get('/', function (req, res) {
  var b=parseInt(req.param('b'));
  var operator=req.param('operator');
  var answer = calculator(a,b,operator);
- answer = answer.toString();
- res.send("answer");
+ res.send(answer.toString());
 
 })
 function calculator(x, y, oper){
