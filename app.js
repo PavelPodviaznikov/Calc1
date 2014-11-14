@@ -2,10 +2,10 @@ var express = require('express')
 var app = express()
 
 app.get('/', function (req, res) {
- a=parseInt(req.param('a'));
- b=parseInt(req.param('b'));
- operator=req.param('operator');
- answer = calculator(a,b,operator);
+ var a=parseInt(req.param('a'));
+ var b=parseInt(req.param('b'));
+ var operator=req.param('operator');
+ var answer = calculator(a,b,operator);
  res.send(answer.toString());
 
 })
