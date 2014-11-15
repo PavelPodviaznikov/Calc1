@@ -1,31 +1,25 @@
 {
-  "name": "Calc1",
-  "version": "0.0.0",
-  "private": true,
-  "description": "Calc1 app",
-  "main": "app.js",
+  "name": "node-js-test",
+  "version": "0.1.2",
+  "description": "A sample Node.js app using Express 4",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
-    "express": "^4.10.2"
+    "express": "~4.9.x"
   },
   "engines": {
     "node": "0.10.x"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PavelPodviaznikov/Calc1.git"
+    "url": "https://github.com/PavelPodviaznikov/node-js-test"
   },
   "keywords": [
     "node",
+    "heroku",
     "express"
   ],
-  "author": "Pavel Podviaznikov",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/PavelPodviaznikov/Calc1/issues"
-  },
-  "homepage": "https://github.com/PavelPodviaznikov/Calc1"
+  "license": "MIT"
 }
